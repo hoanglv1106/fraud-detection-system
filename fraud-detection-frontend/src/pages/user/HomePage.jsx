@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axiosClient from '../../api/axiosClient';
 import { Smartphone, MapPin, Send, CreditCard, LogOut } from 'lucide-react';
-import { toast, ToastContainer } from 'react-toastify'; // 1. Import ToastContainer
-import 'react-toastify/dist/ReactToastify.css';         // 2. Import CSS (Bắt buộc)
+import { toast, ToastContainer } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';        
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -85,7 +85,7 @@ const HomePage = () => {
     return (
         <div className="max-w-md mx-auto bg-white rounded-2xl shadow-xl overflow-hidden mt-10 border border-gray-100 relative">
             
-            {/* 3. ĐẶT TOAST CONTAINER Ở ĐÂY ĐỂ HIỂN THỊ THÔNG BÁO */}
+            {/* ĐẶT TOAST CONTAINER Ở ĐÂY ĐỂ HIỂN THỊ THÔNG BÁO */}
             <ToastContainer /> 
 
             {/* Header */}
@@ -117,7 +117,7 @@ const HomePage = () => {
                             onChange={(e) => setFormData({...formData, amount: e.target.value})}
                         />
                     </div>
-                    {/* Hiển thị số tiền bằng chữ (Tip nhỏ cho UX tốt hơn) */}
+                    {/* Hiển thị số tiền bằng chữ */}
                     {formData.amount && (
                         <p className="text-xs text-blue-600 mt-1 font-medium text-right">
                             {parseInt(formData.amount).toLocaleString('vi-VN')} VNĐ
