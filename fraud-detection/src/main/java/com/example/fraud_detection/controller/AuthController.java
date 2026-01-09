@@ -3,7 +3,7 @@ package com.example.fraud_detection.controller;
 import com.example.fraud_detection.entity.Admin;
 import com.example.fraud_detection.entity.User;
 import com.example.fraud_detection.repository.AdminRepository;
-import com.example.fraud_detection.repository.UserRepository; // <--- Import mới
+import com.example.fraud_detection.repository.UserRepository; 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
