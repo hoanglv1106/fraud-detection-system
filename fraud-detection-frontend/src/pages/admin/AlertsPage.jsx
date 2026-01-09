@@ -53,11 +53,11 @@ const AlertsPage = () => {
                 ) : (
                     alerts.map((tx) => (
                         <div 
-                            // SỬA 1: Key an toàn (lấy id hoặc transactionId)
+                            //  Key an toàn (lấy id hoặc transactionId)
                             key={tx.id || tx.transactionId} 
                             className="bg-white p-5 rounded-xl border-l-4 border-red-500 shadow-sm hover:shadow-md transition-all flex justify-between items-center cursor-pointer group"
                             
-                            // SỬA 2: Log ra console để debug nếu cần
+                            //  Log ra console để debug nếu cần
                             onClick={() => {
                                 console.log("Click item:", tx); 
                                 setSelectedTx(tx);
@@ -102,16 +102,15 @@ const AlertsPage = () => {
                 )}
             </div>
 
-            {/* --- KHU VỰC SỬA LỖI CHÍNH --- */}
+           
             {selectedTx && (
                 <TransactionDetailModal 
-                    // Lỗi cũ: transaction={selectedTx} -> Modal không hiểu
-                    // SỬA THÀNH: transactionId={...} và xử lý cả 2 trường hợp tên ID
+                   
                     transactionId={selectedTx.id || selectedTx.transactionId} 
                     onClose={() => setSelectedTx(null)} 
                 />
             )}
-            {/* ----------------------------- */}
+            
         </div>
     );
 };
