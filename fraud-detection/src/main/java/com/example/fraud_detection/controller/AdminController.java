@@ -2,7 +2,7 @@ package com.example.fraud_detection.controller;
 
 import com.example.fraud_detection.Type.TransactionStatus;
 import com.example.fraud_detection.dto.DailyVolumeStat;
-import com.example.fraud_detection.dto.DashboardStats; // Nhớ import DTO mới tạo
+import com.example.fraud_detection.dto.DashboardStats; 
 import com.example.fraud_detection.dto.TransactionDetailDTO;
 import com.example.fraud_detection.entity.Transaction;
 import com.example.fraud_detection.entity.User;
