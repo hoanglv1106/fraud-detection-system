@@ -163,7 +163,7 @@ const BlacklistPage = () => {
                                             </span>
                                         </td>
 
-                                        {/* --- CỘT QUAN TRỌNG NHẤT: HIỂN THỊ THÔNG TIN USER --- */}
+                                        {/* ---  HIỂN THỊ THÔNG TIN USER --- */}
                                         <td className="p-4">
                                             {item.type === 'USER' ? (
                                                 <div className="flex items-center gap-3">
@@ -227,7 +227,7 @@ const BlacklistPage = () => {
                 </table>
             </div>
 
-            {/* Modal vẫn giữ nguyên như cũ */}
+            
             {showModal && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm animate-fade-in">
                     <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-scale-in">
