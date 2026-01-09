@@ -107,7 +107,7 @@ const TransactionDetailModal = ({ transactionId, onClose }) => {
                             </div>
                         </div>
 
-                        {/* 3. Cột Phải: Ngữ cảnh & Phân tích AI */}
+                        {/* 3. Cột Phải: Ngữ cảnh & Phân tích  */}
                         <div className="space-y-6">
                             {/* Ngữ cảnh (Thiết bị, Vị trí) */}
                             <div className="grid grid-cols-2 gap-3">
@@ -117,7 +117,7 @@ const TransactionDetailModal = ({ transactionId, onClose }) => {
                                 <InfoBox icon={Activity} label="IP" value="192.168.1.1" /> {/* IP giả lập */}
                             </div>
 
-                            {/* --- PHẦN QUAN TRỌNG: KẾT QUẢ AI --- */}
+                            {/* ---  KẾT QUẢ  --- */}
                             <div className={`rounded-xl border-l-4 p-5 shadow-sm ${detail.isAnomaly ? 'bg-red-50 border-red-500' : 'bg-green-50 border-green-500'}`}>
                                 <h4 className={`text-sm font-bold flex items-center gap-2 mb-4 ${detail.isAnomaly ? 'text-red-800' : 'text-green-800'}`}>
                                     {detail.isAnomaly ? <ShieldAlert size={18} /> : <CheckCircle size={18} />}
