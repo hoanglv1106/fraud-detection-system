@@ -1,7 +1,7 @@
 package com.example.fraud_detection.controller;
 
 import com.example.fraud_detection.dto.request.BlacklistRequest;
-import com.example.fraud_detection.dto.response.BlacklistResponse; // <--- Import DTO phản hồi
+import com.example.fraud_detection.dto.response.BlacklistResponse; 
 import com.example.fraud_detection.service.BlacklistService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
